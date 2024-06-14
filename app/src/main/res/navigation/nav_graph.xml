@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.virtuula.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.virtuula.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_administerFragment"
+            app:destination="@id/administerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_newPasswordFragment"
+            app:destination="@id/newPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.virtuula.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.virtuula.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_createBookingFragment"
+            app:destination="@id/createBookingFragment" />
+        <action
+            android:id="@+id/action_userFragment_to_classMenuFragment"
+            app:destination="@id/classMenuFragment" />
+        <action
+            android:id="@+id/action_userFragment_to_classComputerListFragment"
+            app:destination="@id/classComputerListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/administerFragment"
+        android:name="com.example.virtuula.AdministerFragment"
+        android:label="fragment_administer"
+        tools:layout="@layout/fragment_administer" >
+        <action
+            android:id="@+id/action_administerFragment_to_createClassFragment"
+            app:destination="@id/createClassFragment" />
+        <action
+            android:id="@+id/action_administerFragment_to_updateClassFragment"
+            app:destination="@id/updateClassFragment" />
+        <action
+            android:id="@+id/action_administerFragment_to_sessionsListFragment"
+            app:destination="@id/sessionsListFragment" />
+        <action
+            android:id="@+id/action_administerFragment_to_administerBookingListFragment"
+            app:destination="@id/administerBookingListFragment" />
+        <action
+            android:id="@+id/action_administerFragment_to_classMenuFragment"
+            app:destination="@id/classMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createClassFragment"
+        android:name="com.example.virtuula.CreateClassFragment"
+        android:label="fragment_create_class"
+        tools:layout="@layout/fragment_create_class" >
+        <action
+            android:id="@+id/action_createClassFragment_to_administerFragment"
+            app:destination="@id/administerFragment" />
+        <action
+            android:id="@+id/action_createClassFragment_to_classMenuFragment"
+            app:destination="@id/classMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createComputerFragment"
+        android:name="com.example.virtuula.CreateComputerFragment"
+        android:label="fragment_create_computer"
+        tools:layout="@layout/fragment_create_computer" >
+        <action
+            android:id="@+id/action_createComputerFragment_to_classMenuFragment"
+            app:destination="@id/classMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateComputerFragment"
+        android:name="com.example.virtuula.UpdateComputerFragment"
+        android:label="fragment_update_computer"
+        tools:layout="@layout/fragment_update_computer" >
+        <action
+            android:id="@+id/action_updateComputerFragment_to_classMenuFragment"
+            app:destination="@id/classMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateClassFragment"
+        android:name="com.example.virtuula.UpdateClassFragment"
+        android:label="fragment_update_class"
+        tools:layout="@layout/fragment_update_class" >
+        <action
+            android:id="@+id/action_updateClassFragment_to_administerFragment"
+            app:destination="@id/administerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sessionsListFragment"
+        android:name="com.example.virtuula.SessionsListFragment"
+        android:label="fragment_sessions_list"
+        tools:layout="@layout/fragment_sessions_list" />
+    <fragment
+        android:id="@+id/createBookingFragment"
+        android:name="com.example.virtuula.CreateBookingFragment"
+        android:label="fragment_create_booking"
+        tools:layout="@layout/fragment_create_booking" >
+        <action
+            android:id="@+id/action_createBookingFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/administerBookingListFragment"
+        android:name="com.example.virtuula.AdministerBookingListFragment"
+        android:label="fragment_administer_booking_list"
+        tools:layout="@layout/fragment_administer_booking_list" />
+    <fragment
+        android:id="@+id/classMenuFragment"
+        android:name="com.example.virtuula.ClassMenuFragment"
+        android:label="fragment_class_menu"
+        tools:layout="@layout/fragment_class_menu" >
+        <action
+            android:id="@+id/action_classMenuFragment_to_createComputerFragment"
+            app:destination="@id/createComputerFragment" />
+        <action
+            android:id="@+id/action_classMenuFragment_to_updateComputerFragment"
+            app:destination="@id/updateComputerFragment" />
+        <action
+            android:id="@+id/action_classMenuFragment_to_classComputerListFragment"
+            app:destination="@id/classComputerListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/classComputerListFragment"
+        android:name="com.example.virtuula.ClassComputerListFragment"
+        android:label="fragment_class_computer_list"
+        tools:layout="@layout/fragment_class_computer_list" >
+        <action
+            android:id="@+id/action_classComputerListFragment_to_classMenuFragment"
+            app:destination="@id/classMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.example.virtuula.NewPasswordFragment"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password" >
+        <action
+            android:id="@+id/action_newPasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

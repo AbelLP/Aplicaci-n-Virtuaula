@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:elevation="8dp"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="POLÍTICAS DE PRIVACIDAD VIRTU@ULA "
+                android:textColor="@color/black"/>
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/justificado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/privacidad"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/titulo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="INFORMACIÓN RECOGIDA"
+                android:textColor="@color/black"/>
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/justificado2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/informacion"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/titul3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="USO DE INFORMACIÓN "
+                android:textColor="@color/black"/>
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/justificado3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/uso"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/titul4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="ENLACES A TERCEROS "
+                android:textColor="@color/black"/>
+            <com.codesgood.views.JustifiedTextView
+                android:id="@+id/justificado4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/terceros"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/btnAcepPol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aceptar"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>
+</layout>

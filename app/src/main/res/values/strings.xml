@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Virtu@ula</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="privacidad">Si usa esta aplicación, significa a que está de acuerdo a que recopilemos información del usuario.</string>
+    <string name="informacion">Esta aplicación sólo recolectará la información requerida en nuestro formualrio de registro. Si recibiese algún tipo de mensaje desde nuestra aplicación el cual le pida algún tipo de información personal no requirida, por favor, avise inmediatamente a atención al cliente.</string>
+    <string name="uso">La información sólo será usada para reunir datos de las experiencias de los usuarios con la aplicación.</string>
+    <string name="terceros">Esta aplicación no usa enlaces a terceros.</string>
+    <string name="politica">Si usa esta aplicación, significa a que está de acuerdo a que recopilemos información del usuario.
+    Esta aplicación sólo recolectará la información requerida en nuestro formualrio de registro. Si recibiese algún tipo de mensaje desde nuestra aplicación el cual le pida algún tipo de información personal no requirida, por favor, avise inmediatamente a atención al cliente.
+    La información sólo será usada para reunir datos de las experiencias de los usuarios con la aplicación.
+    Esta aplicación no usa enlaces a terceros.</string>
+    <string-array name="tiposUsuario">
+        <item>Usuario</item>
+        <item>Administrador</item>
+    </string-array>
+    <string-array name="estadoEquipo">
+        <item>Libre</item>
+        <item>Ocupado</item>
+        <item>Roto</item>
+    </string-array>
+</resources>
